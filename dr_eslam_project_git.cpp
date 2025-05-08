@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿
+#include <iostream>
 #include <ctime>
 #include <cstdlib>
 using namespace std;
@@ -111,8 +112,13 @@ enWinner WhoWonTheGame(short PlayerWinTimes, short ComputerWinTimes)
 
 /*Choice Name*/
 
+// mostafa taha WinnerName
+string WinnerName(enWinner Winner)
+{
+	string arrWinnerName[3] = { "Player" , "Computer" , "No Winner" };
+	return arrWinnerName[Winner - 1];
+}
 
-/*Winner Name*/
 
 void SetWinnerScreenColor(enWinner Winner)
 {
