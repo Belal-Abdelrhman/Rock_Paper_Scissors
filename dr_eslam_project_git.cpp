@@ -28,7 +28,12 @@ struct stGameResults
 	string WinnerName;
 };
 
-/*Random Number*/
+// Ahmed Ramadan Add Random Number
+int RandomNumber(int From, int To)
+{
+	int RandNum = rand() % (To - From + 1) + From;
+	return RandNum;
+}
 
 short HowManyRounds()
 {
