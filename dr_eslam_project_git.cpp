@@ -165,8 +165,11 @@ void PrintRoundResults(stRoundInfo RoundInfo)
 }
 
 
-/*ResetScreen*/
-
+void ResetScreen()
+{
+	system("cls");
+	system("color 0F");
+}
 
 stGameResults FillGameResults(short GameRound, short PlayerWinTimes, short ComputerWinTimes, short DrawTimes)
 {
